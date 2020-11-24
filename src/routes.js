@@ -8,7 +8,7 @@ routes.post('/pacientes', async (req, res) => {
 
   try {
 
-    /*
+
     let schema = yup.array().of(
       yup.object().shape({
         name: yup.string().required(),
@@ -21,7 +21,7 @@ routes.post('/pacientes', async (req, res) => {
     )
 
     const validate = await schema.validate(req.body);
-*/
+
     const responses = req.body.map(async paciente => {
       console.log(paciente)
       try {
